@@ -40,7 +40,6 @@ export const selectBasketItemsWithId = (state, id) =>
   state.basket.items.filter((item) => item.id === id);
 
 export const selectBasketTotal = (state) => {
-  console.log(state.basket.items);
   return state.basket.items.reduce((total, item) => total += item.price, 0);
 };
 

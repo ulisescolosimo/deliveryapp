@@ -19,8 +19,6 @@ const DishRow = ({ id, price, image, description, name }) => {
 
   const items = useSelector((state) => selectBasketItemsWithId(state, id));
 
-  console.log(items)
-
   const addItem = () => {
     dispatch(addToBasket({ id, price, image, description, name }));
   };
