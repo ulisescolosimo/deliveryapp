@@ -6,13 +6,13 @@ import {
   ChevronRightIcon,
   MapPinIcon,
   QuestionMarkCircleIcon,
-  StarIcon,
 } from "react-native-heroicons/outline";
 import DishRow from "../components/DishRow";
 import BasketIcon from "../components/BasketIcon";
 import { useDispatch } from "react-redux";
 import { urlFor } from "../sanity";
 import { setRestaurant } from '../features/restaurantSlice'
+import { StarIcon } from "react-native-heroicons/solid";
 
 const Restaurant = () => {
   const navigation = useNavigation();

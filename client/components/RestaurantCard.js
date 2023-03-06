@@ -2,13 +2,11 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { Image } from "react-native";
 import {
-  LockOpenIcon,
-  MapIcon,
   MapPinIcon,
-  StarIcon,
 } from "react-native-heroicons/outline";
 import { urlFor } from "../sanity";
 import { useNavigation } from "@react-navigation/native";
+import { StarIcon } from "react-native-heroicons/solid";
 
 const RestaurantCard = ({
   id,

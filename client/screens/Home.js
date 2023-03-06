@@ -5,6 +5,7 @@ import {
   Image,
   TextInput,
   ScrollView,
+  TouchableOpacity,
 } from "react-native";
 import React, { useLayoutEffect, useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
@@ -58,6 +59,8 @@ const HomeScreen = () => {
         </View>
         <UserIcon size={35} color="#00CCBB" />
       </View>
+
+      <TouchableOpacity onPress={()=>navigation.navigate("Delivery")}><Text>Delivery</Text></TouchableOpacity>
 
       {/* Search bar */}
 

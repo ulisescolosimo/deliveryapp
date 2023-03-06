@@ -23,7 +23,6 @@ import { formatCurrency } from "react-native-format-currency";
 const Basket = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  const restaurant = useSelector(selectRestaurant);
   const items = useSelector(selectBasketItems);
   const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([]);
   const total = useSelector(selectBasketTotal);
@@ -44,15 +43,12 @@ const Basket = () => {
         <View className="p-5 border-b border-[#00CCBB] bg-white shadow">
           <View>
             <Text className="font-bold text-xl text-center">Basket</Text>
-            <Text className="text-center text-gray-400">
-              {restaurant.title}
-            </Text>
           </View>
           <TouchableOpacity
             className="absolute top-3 right-5"
             onPress={navigation.goBack}
           >
-            <XCircleIcon height={50} width={50} color={"#00CCBB"} />
+            <XCircleIcon height={45} width={45} color={"#00CCBB"} />
           </TouchableOpacity>
         </View>
 
